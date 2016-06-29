@@ -1,25 +1,34 @@
 # JSON Schema for PHP
 
-[![Build Status](https://travis-ci.org/justinrainbow/json-schema.svg?branch=master)](https://travis-ci.org/justinrainbow/json-schema)
-[![Latest Stable Version](https://poser.pugx.org/justinrainbow/json-schema/v/stable.png)](https://packagist.org/packages/justinrainbow/json-schema)
-[![Total Downloads](https://poser.pugx.org/justinrainbow/json-schema/downloads.png)](https://packagist.org/packages/justinrainbow/json-schema)
+[![Code Climate](https://codeclimate.com/github/robotdance/php-json-schema/badges/gpa.svg)](https://codeclimate.com/github/robotdance/php-json-schema)
+[![Test Coverage](https://codeclimate.com/github/robotdance/php-json-schema/badges/coverage.svg)](https://codeclimate.com/github/robotdance/php-json-schema/coverage)
+[![Issue Count](https://codeclimate.com/github/robotdance/php-json-schema/badges/issue_count.svg)](https://codeclimate.com/github/robotdance/php-json-schema)
+[![Build Status](https://travis-ci.org/robotdance/php-json-schema.svg?branch=master)](https://travis-ci.org/robotdance/php-json-schema)
 
-A PHP Implementation for validating `JSON` Structures against a given `Schema`.
+A PHP [json-schema](http://json-schema.org/) implementation for validating JSON data agains a JSON Schema definition.
 
-See [json-schema](http://json-schema.org/) for more details.
+Originally forked from [justinrainbow/json-schema](https://github.com/justinrainbow/json-schema).In addition to the original, I18n was added for the validation messages, with initial support for en-US and pt-BR.
+Currently the branch "add-i18n" will be kept in sync with the forked repository, and the master branch will follow is own way.
 
 ## Installation
 
-### Library
+PHP-Json-Schema is available as a [`Composer`](https://github.com/composer/composer) package, and use it also as its dependency manager.
+So you need a composer.json in your project root, requiring php-json-schema:
 
-    $ git clone https://github.com/justinrainbow/json-schema.git
+```json
+  ...
+  "require": {
+    "robotdance/php-json-schema": "latest stable version"
+  }
+  ...
+```
 
-### Dependencies
+So after updating your composer file, simply update composer.
 
-#### [`Composer`](https://github.com/composer/composer) (*will use the Composer ClassLoader*)
+    $ php composer.phar update
+    $ composer update
 
-    $ wget http://getcomposer.org/composer.phar
-    $ php composer.phar require justinrainbow/json-schema:~2.0
+The way you update with composer will depend on how you installed composer.
 
 ## Usage
 
