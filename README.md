@@ -7,13 +7,15 @@
 
 A PHP [json-schema](http://json-schema.org/) implementation for validating JSON data agains a JSON Schema definition.
 
-Originally forked from [justinrainbow/json-schema](https://github.com/justinrainbow/json-schema).In addition to the original, I18n was added for the validation messages, with initial support for en-US and pt-BR.
-Currently the branch "add-i18n" will be kept in sync with the forked repository, and the master branch will follow is own way.
+Originally forked from [justinrainbow/json-schema](https://github.com/justinrainbow/json-schema).
+
+In addition to the original, I18n was added for the validation messages, with initial support for en-US and pt-BR.
+Currently the branch "add-i18n" will be kept in sync with the forked repository, and the master branch will follow its own way.
 
 ## Installation
 
 PHP-Json-Schema is available as a [`Composer`](https://github.com/composer/composer) package, and use it also as its dependency manager.
-So you need a composer.json in your project root, requiring php-json-schema:
+So you will need a composer.json in your project root, requiring php-json-schema:
 
 ```json
   ...

@@ -36,14 +36,15 @@
         }
     }],
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=5.5.9",
         "robotdance/php-i18n": "0.0.8",
         "robotdance/php-app-config": "0.0.9"
     },
     "require-dev": {
         "json-schema/JSON-Schema-Test-Suite": "1.2.0",
         "phpunit/phpunit": "^4.8.22",
-        "phpdocumentor/phpdocumentor": "~2"
+        "phpdocumentor/phpdocumentor": "~2",
+        "codeclimate/php-test-reporter": "dev-master"
     },
     "autoload": {
         "psr-4": { "JsonSchema\\": "src/JsonSchema/" }
